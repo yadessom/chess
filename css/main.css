@@ -1,5 +1,8 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 body{
+    font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
     background: url("../images/bg.jpg") repeat-y;
 }
 .header{
@@ -11,7 +14,10 @@ body{
     justify-content: space-between;
 }
 .sec_01{
+    width: 100%;
     position: relative;
+    height: 350px;
+    border: 1px solid red;
 }
 .sec_01_play{
     position: absolute;
@@ -23,8 +29,26 @@ body{
     border: 1px solid red;
     width: 120px;
     position: absolute;
-    left: 50%;
-    margin-right: 50px;
+    left: calc(50% - 62px);
     transform: translateX(-50%);
     top: 200px;
+    font-weight: bold;
+}
+.sec_02{
+    width: 100%;
+}
+.sec_03{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 50px 0 50px 0;
+    display: flex;
+}
+
+.sec_05{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.past_battle{
+
 }

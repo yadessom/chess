@@ -1,0 +1,30 @@
+@charset "utf-8";
+body{
+    background: url("../images/bg.jpg") repeat-y;
+}
+.header{
+    width: 100%;
+    padding: 35px;
+    box-sizing: border-box;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.sec_01{
+    position: relative;
+}
+.sec_01_play{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+}
+.sec_01_player{
+    border: 1px solid red;
+    width: 120px;
+    position: absolute;
+    left: 50%;
+    margin-right: 50px;
+    transform: translateX(-50%);
+    top: 200px;
+}

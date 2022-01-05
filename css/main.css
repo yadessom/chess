@@ -3,52 +3,195 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 body{
     font-family: 'Noto Sans KR', 'Nanum Gothic', sans-serif;
-    background: url("../images/bg.jpg") repeat-y;
+    background: #161616 url("../images/bg.jpg")repeat-y;
 }
+div{box-sizing: border-box;}
+/* ******************************** */
 .header{
     width: 100%;
-    padding: 35px;
-    box-sizing: border-box;
-    border: 1px solid red;
+}
+.header_inner{
+    width: 1200px;
+    height: 130px;
+    margin: 0 auto;
+    position: relative;
+}
+.header_inner h1{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header_inner ul{
+    position: absolute;
+    top: 50%; right: 0;
+    transform: translateY(-50%);
+}
+.header_inner ul li{
+    float: left;
+}
+.header_inner ul li a{
+    display: block;
+    width: 90px; height: 40px;
+    line-height: 40px;
+    color: #7FA650;
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+}
+.header_inner ul li a::before{
+    content: '';
+    width: 1px; height: 20px;
+    background: #7FA650;
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.header_inner ul li:first-child a::before{
+    display: none;
+}
+/* ******************************** */
+.gnb{
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+}
+.gnb ul{
     display: flex;
     justify-content: space-between;
 }
+.gnb ul li a{
+    display: block;
+    width: 200px; height: 90px;
+    line-height: 90px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, .6);
+}
+.gnb ul li:first-child a{
+    text-align: left;
+    width: 150px;
+}
+.gnb ul li:last-child a{
+    text-align: right;
+    width: 150px;
+}
+.sec_01_02_wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* ******************************** */
 .sec_01{
-    width: 100%;
-    position: relative;
-    height: 350px;
-    border: 1px solid red;
+    width: 600px;
+    height: 620px;
+    padding: 90px 0 80px 0;
+    float: right;
+    text-align: center;
 }
-.sec_01_play{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 40px;
+.sec_01 img{
+    display: inline-block;
+    margin-bottom: 60px;
 }
-.sec_01_player{
-    border: 1px solid red;
-    width: 120px;
-    position: absolute;
-    left: calc(50% - 62px);
-    transform: translateX(-50%);
-    top: 200px;
+.sec_01 ul{
+    display: inline-block;
+    margin: 0 auto;
+}
+.sec_01 ul li{
+    float:left;
+}
+.sec_01 ul li:first-child{
+    margin-right: 20px;
+}
+.sec_01 ul a{
+    font-size: 18px;
+    color: #fff;
     font-weight: bold;
 }
+.sec_01 ul a span{
+    color: rgba(255, 255, 255, .6);
+}
+/* ******************************** */
 .sec_02{
-    width: 100%;
+    width: 600px;
+    height: 620px;
+    padding: 30px 0 0 0;
+    float: right;
+    color: #fff;
 }
+.sec_02 img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.sec_02 h2{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.sec_02 h3{
+    font-size: 15px;
+    opacity: .3;
+    margin-bottom: 15px;
+}
+.sec_02 p{
+    font-size: 20px;
+    opacity: .5;
+    line-height: 30px;
+}
+/* ******************************** */
 .sec_03{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 50px 0 50px 0;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.sec_03 h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.sec_03 img{
+    margin-bottom: 15px;
+}
+.sec_03 ul{
     display: flex;
+    justify-content: space-between;
+}
+.sec_03 ul li{
+    float:left;
+    width: 287px;
+}
+.sec_03 h4{
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+}
+/* ******************************** */
+.banner{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 150px 0 150px 0;
+}
+/* ******************************** */
+.sec_04{
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.sec_04 h3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.sec_04_list{
+    width: 100%;
+    border: 1px solid red;
+}
+.sec_04_list li{
+    display: block;
+    border: 1px solid red;
 }
 
-.sec_05{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.past_battle{
-
-}

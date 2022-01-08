@@ -16,6 +16,9 @@ div{box-sizing: border-box;}
     margin: 0 auto;
     position: relative;
 }
+.m_menu_btn{
+    display:none;
+}
 .header_inner h1{
     position: absolute;
     top: 50%; left: 50%;
@@ -426,4 +429,61 @@ div{box-sizing: border-box;}
     color:#fff;
     opacity: .25;
     line-height: 25px;
+}
+/* ******************************** */
+
+@media screen and ( max-width:320px ){
+
+.header_inner{
+    width: 100%;
+    border:1px solid red;
+}
+.m_menu_btn{
+    display: block;
+    position: absolute;
+    left:35px; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header_inner h1{
+    position: absolute;
+top: 50%; left: 50%;
+    transform: scale(.8) translate(-50%, -50%);
+}
+.header_inner ul{
+    display: none;
+}
+/* ******************************** */
+.gnb{
+    display: none;
+}
+/* ******************************** */
+.sec_01_02_wrap{
+    float:none;
+    border:1px solid red;
+}
+/* ******************************** */
+.sec_01{
+    width: 100%;
+    border:1px solid red;
+}
+/* ******************************** */
+.sec_02{
+    width: 100%;
+    border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

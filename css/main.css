@@ -19,6 +19,9 @@ div{box-sizing: border-box;}
 .m_menu_btn{
     display:none;
 }
+.m_profile{
+    display: none;
+}
 .header_inner h1{
     position: absolute;
     top: 50%; left: 50%;
@@ -458,6 +461,7 @@ div{box-sizing: border-box;}
     transform: translateY(-50%);
 }
 .m_profile{
+    display: block;
     position: absolute;
     right: 35px;
     top: 50%;
